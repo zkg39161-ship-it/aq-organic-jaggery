@@ -131,13 +131,12 @@
             font-size: 15px;
             letter-spacing: .5px;
         }
-    /* Scroll Animations */
+
+        /* Scroll Animations */
         .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        /* SEO-friendly hidden text (for screen readers) */
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    /* Floating WhatsApp Button */
+        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -155,36 +154,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             z-index: 2000;
         }
-
-        /* Testimonials */
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .testimonial {
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        /* Contact Form */
-        form {
-            max-width: 500px;
-            margin: 40px auto 0;
-            display: grid;
-            gap: 15px;
-        }
-        input, textarea {
-            padding: 14px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        textarea { resize: none; }
     </style>
 </head>
 <body>
@@ -208,7 +177,7 @@
         <p>Premium organic jaggery made from pure sugarcane juice, free from chemicals and artificial processing.</p>
         <a href="#contact" class="btn">Buy Now</a>
     </div>
-    <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_4b6a0a76.jpg" alt="AQ Organic Jaggery">
+    <img src="image1.jpg" alt="AQ Organic Jaggery Main Product">
 </section>
 
 <section id="about" class="reveal">
@@ -229,12 +198,14 @@
     <h2>Our Products</h2>
     <div class="products">
         <div class="product-card reveal">
-            <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_4b6a0a76.jpg" alt="Jaggery Cubes">
+            <img src="image1.jpg" alt="Jaggery Cubes">
             <h3>Jaggery Cubes</h3>
+            <a href="https://wa.me/03000000000?text=I%20want%20to%20buy%20Jaggery%20Cubes" class="btn">Buy Now</a>
         </div>
         <div class="product-card reveal">
-            <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_e4c267ea.jpg" alt="Jaggery Powder">
+            <img src="image2.jpg" alt="Jaggery Powder">
             <h3>Jaggery Powder</h3>
+            <a href="https://wa.me/03000000000?text=I%20want%20to%20buy%20Jaggery%20Powder" class="btn">Buy Now</a>
         </div>
     </div>
 </section>
@@ -264,6 +235,10 @@
 <footer>
     <p>© 2025 AQ Organic Jaggery. All Rights Reserved.</p>
 </footer>
+
+<a href="https://wa.me/03000000000" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    &#x1F4AC;
+</a>
 
 <script>
     // Scroll animation
