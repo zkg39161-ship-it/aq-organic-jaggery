@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the benefits of organic products from AQ Fruit Farm. Healthy, chemical-free, and full of natural nutrients." />
+    <meta name="keywords" content="organic benefits, health benefits, natural products, AQ Fruit Farm" />
+    <meta name="author" content="AQ Fruit Farm" />
+    <title>AQ Fruit Farm | Benefits</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #f6f3f8; color: #2b2b2b; }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg,#3a0f52,#6f2c8a);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 { font-size: 42px; letter-spacing: 2px; }
+        header p { font-size: 18px; margin-top: 10px; opacity: .95; }
+
+        /* Navigation */
+        nav {
+            background: rgba(45,15,58,0.95);
+            backdrop-filter: blur(10px);
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            font-size: 15px;
+            position: relative;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #d9b3ff;
+            left: 0;
+            bottom: -4px;
+            transition: 0.3s;
+        }
+        nav a:hover::after { width: 100%; }
+
+        /* Sections */
+        section { padding: 70px 20px; text-align: center; }
+        section h2 { font-size: 36px; margin-bottom: 22px; color: #3a144b; }
+        section p { max-width: 850px; margin: auto; font-size: 18px; line-height: 1.7; }
+
+        /* Benefits List */
+        .benefits-list {
+            max-width: 520px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 2.2;
+        }
+        .benefits-list span { font-weight: 600; color: #4b1e63; }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg,#2d0f3a,#4b1e63);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 15px;
+            letter-spacing: .5px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AQ FRUIT FARM</h1>
+    <p>Nature's Best • Pure Sweetness • Organic Wellness</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="benefits.html">Benefits</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section id="benefits">
+    <h2>Why Choose Our Organic Products?</h2>
+    <p>
+        Our products are carefully made from natural ingredients, ensuring maximum health benefits and purity.  
+        Choosing organic supports your wellness and protects your body from chemicals.
+    </p>
+    <br>
+    <div class="benefits-list">
+        ✔ <span>Rich in Natural Nutrients & Minerals</span><br>
+        ✔ <span>100% Chemical-Free & Unrefined</span><br>
+        ✔ <span>Supports Digestion & Gut Health</span><br>
+        ✔ <span>Boosts Immunity & Provides Natural Energy</span><br>
+        ✔ <span>Safe, Healthy & Traditionally Made</span>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 AQ Fruit Farm. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/03263086834" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    &#x1F4AC;
+</a>
+
+</body>
+</html>
