@@ -6,47 +6,128 @@
     <title>AQ Organic Jaggery | Pure, Natural & Organic</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; background: #f8f4f8; color: #333; }
+        body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #f6f3f8; color: #2b2b2b; }
 
         /* Header */
-        header { background: linear-gradient(90deg,#4b1e63,#2d0f3a); padding: 60px 20px; text-align: center; color: white; }
-        header h1 { font-size: 48px; letter-spacing: 2px; }
-        header p { font-size: 20px; margin-top: 10px; opacity: .9; }
+        header {
+            background: linear-gradient(135deg,#3a0f52,#6f2c8a);
+            padding: 90px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 { font-size: 52px; letter-spacing: 3px; }
+        header p { font-size: 20px; margin-top: 12px; opacity: .95; }
 
         /* Navigation */
-        nav { background: #2d0f3a; padding: 18px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; text-decoration: none; margin: 0 18px; font-weight: 600; font-size: 17px; }
-        nav a:hover { color: #d9b3ff; }
+        nav {
+            background: rgba(45,15,58,0.95);
+            backdrop-filter: blur(10px);
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #d9b3ff;
+            left: 0;
+            bottom: -6px;
+            transition: 0.3s;
+        }
+        nav a:hover::after { width: 100%; }
 
         /* Hero */
-        .hero { display: flex; justify-content: center; align-items: center; padding: 80px 20px; gap: 40px; flex-wrap: wrap; }
-        .hero-text h2 { font-size: 38px; margin-bottom: 15px; color: #3a144b; }
-        .hero-text p { font-size: 18px; max-width: 450px; }
-        .hero img { width: 340px; border-radius: 12px; }
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            align-items: center;
+            gap: 50px;
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero-text h2 { font-size: 44px; margin-bottom: 18px; color: #3a144b; }
+        .hero-text p { font-size: 18px; max-width: 480px; line-height: 1.7; }
+        .hero img { width: 100%; max-width: 420px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
 
-        .btn { display: inline-block; margin-top: 20px; padding: 14px 28px; background: #4b1e63; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; }
-        .btn:hover { background: #6f2c8a; }
+        .btn {
+            display: inline-block;
+            margin-top: 26px;
+            padding: 15px 34px;
+            background: linear-gradient(90deg,#4b1e63,#6f2c8a);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: .5px;
+            transition: transform .3s, box-shadow .3s;
+        }
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(111,44,138,.4);
+        }
 
-        /* About */
-        section { padding: 70px 20px; text-align: center; }
-        section h2 { font-size: 32px; margin-bottom: 20px; color: #3a144b; }
-        section p { max-width: 800px; margin: auto; font-size: 18px; line-height: 1.6; }
+        /* Sections */
+        section { padding: 90px 20px; text-align: center; }
+        section h2 { font-size: 36px; margin-bottom: 22px; color: #3a144b; }
+        section p { max-width: 850px; margin: auto; font-size: 18px; line-height: 1.7; }
 
         /* Products */
-        .products { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; padding: 60px 20px; }
-        .product-card { background: white; padding: 20px; border-radius: 12px; width: 280px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .product-card img { width: 100%; border-radius: 10px; }
-        .product-card h3 { margin-top: 12px; font-size: 22px; }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 60px auto 0;
+        }
+        .product-card {
+            background: white;
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            transition: transform .3s, box-shadow .3s;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+        }
+        .product-card img { width: 100%; border-radius: 14px; }
+        .product-card h3 { margin-top: 16px; font-size: 22px; }
 
         /* Benefits */
-        .benefits-list { max-width: 500px; margin: auto; font-size: 20px; line-height: 2; }
-        .benefits-list span { font-weight: bold; color: #4b1e63; }
+        .benefits-list {
+            max-width: 520px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 2.2;
+        }
+        .benefits-list span { font-weight: 600; color: #4b1e63; }
 
         /* Contact */
-        #contact strong { font-size: 24px; }
+        #contact strong { font-size: 26px; }
 
         /* Footer */
-        footer { background: #2d0f3a; color: white; padding: 25px; text-align: center; margin-top: 40px; }
+        footer {
+            background: linear-gradient(90deg,#2d0f3a,#4b1e63);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 15px;
+            letter-spacing: .5px;
+        }
     </style>
 </head>
 <body>
@@ -115,3 +196,4 @@
 
 </body>
 </html>
+
