@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AQ Organic Jaggery offers pure, chemical-free organic jaggery made from natural sugarcane. Healthy, unrefined and full of minerals." />
+    <meta name="keywords" content="organic jaggery, natural jaggery, sugarcane jaggery, healthy sweetener, AQ jaggery" />
+    <meta name="author" content="AQ Organic Jaggery" />
     <title>AQ Organic Jaggery | Pure, Natural & Organic</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -128,6 +131,12 @@
             font-size: 15px;
             letter-spacing: .5px;
         }
+    /* Scroll Animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* SEO-friendly hidden text (for screen readers) */
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
 </head>
 <body>
@@ -145,35 +154,35 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="home" class="hero">
+<section id="home" class="hero reveal">
     <div class="hero-text">
         <h2>Experience the Purest Sweetness</h2>
         <p>Premium organic jaggery made from pure sugarcane juice, free from chemicals and artificial processing.</p>
-        <a href="#contact" class="btn">Order Now</a>
+        <a href="#contact" class="btn">Buy Now</a>
     </div>
     <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_4b6a0a76.jpg" alt="AQ Organic Jaggery">
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
     <h2>About AQ Organic Jaggery</h2>
     <p>AQ Organic Jaggery is crafted using traditional methods to preserve nutrients and natural sweetness. We deliver chemical-free, unrefined jaggery directly sourced from farmers to your home.</p>
 </section>
 
-<section id="products">
+<section id="products" class="reveal">
     <h2>Our Products</h2>
     <div class="products">
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_4b6a0a76.jpg" alt="Jaggery Cubes">
             <h3>Jaggery Cubes</h3>
         </div>
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="https://raw.githubusercontent.com/zkg39161-ship-it/aq-organic-jaggery/main/WhatsApp%20Image%202025-11-29%20at%2016.11.00_e4c267ea.jpg" alt="Jaggery Powder">
             <h3>Jaggery Powder</h3>
         </div>
     </div>
 </section>
 
-<section id="benefits">
+<section id="benefits" class="reveal">
     <h2>Why Choose Organic Jaggery?</h2>
     <div class="benefits-list">
         ✔ <span>Rich in Iron & Minerals</span><br>
@@ -184,7 +193,7 @@
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
     <h2>Contact Us</h2>
     <p>WhatsApp: <strong>0300-0000000</strong></p>
     <a class="btn" href="https://wa.me/03000000000" target="_blank">Chat on WhatsApp</a>
@@ -194,6 +203,19 @@
     <p>© 2025 AQ Organic Jaggery. All Rights Reserved.</p>
 </footer>
 
+<script>
+    // Scroll animation
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+        reveals.forEach(el => {
+            const windowHeight = window.innerHeight;
+            const revealTop = el.getBoundingClientRect().top;
+            if (revealTop < windowHeight - 100) {
+                el.classList.add('active');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
-
