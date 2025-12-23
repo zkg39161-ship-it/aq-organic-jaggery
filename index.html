@@ -3,155 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="description" content="AQ Fruit Farm offers fresh fruits and natural farm products directly from farmers. Healthy, organic and chemical-free." />
     <meta name="keywords" content="fruit farm, mangoes, organic products, natural foods, AQ Fruit Farm" />
     <meta name="author" content="AQ Fruit Farm" />
+
     <title>AQ Fruit Farm | Fresh From Farm</title>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Poppins', 'Segoe UI', sans-serif;
-            background: #FFFDE7;
-            color: #2E2E2E;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(120deg, #2E7D32, #66BB6A);
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            font-size: 46px;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Navigation */
-        nav {
-            background: #2E7D32;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: 600;
-        }
-        nav a:hover {
-            color: #F9A825;
-        }
-
-        /* Hero */
-        .hero {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-            align-items: center;
-            gap: 40px;
-            padding: 90px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .hero-text h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-            color: #2E7D32;
-        }
-        .hero-text p {
-            font-size: 18px;
-            max-width: 500px;
-            line-height: 1.7;
-        }
-        .hero img {
-            width: 100%;
-            max-width: 420px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-
-        /* Button */
-        .btn {
-            display: inline-block;
-            margin-top: 22px;
-            padding: 14px 32px;
-            background: linear-gradient(90deg, #F9A825, #EF6C00);
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform .3s, box-shadow .3s;
-        }
-        .btn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(239,108,0,.4);
-        }
-
-        /* Sections */
-        section {
-            padding: 70px 20px;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 34px;
-            margin-bottom: 20px;
-            color: #2E7D32;
-        }
-        section p {
-            max-width: 900px;
-            margin: auto;
-            font-size: 18px;
-            line-height: 1.7;
-        }
-
-        /* Footer */
-        footer {
-            background: #2E7D32;
-            color: white;
-            padding: 35px 20px;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        /* Scroll Animation */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s ease;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            z-index: 2000;
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -175,13 +35,16 @@
             AQ Fruit Farm brings you farm-fresh fruits and natural products,
             grown with care and delivered with trust.
         </p>
+
         <a href="https://wa.me/03263086834" class="btn" target="_blank">
             Order on WhatsApp
         </a>
     </div>
 
-    <img src="https://github.com/zkg39161-ship-it/aq-organic-jaggery/blob/main/image%202.jpg?raw=true"
-         alt="Fresh Fruits from AQ Fruit Farm">
+    <img 
+        src="https://github.com/zkg39161-ship-it/aq-organic-jaggery/blob/main/image%202.jpg?raw=true"
+        alt="Fresh Fruits from AQ Fruit Farm"
+    >
 </section>
 
 <section class="reveal">
@@ -197,12 +60,15 @@
     <p>© 2025 AQ Fruit Farm. All Rights Reserved.</p>
 </footer>
 
+<!-- WhatsApp Floating Button -->
 <a href="https://wa.me/03263086834" target="_blank" class="whatsapp-float">
     💬
 </a>
 
+<!-- Scroll Animation Script -->
 <script>
     const reveals = document.querySelectorAll('.reveal');
+
     window.addEventListener('scroll', () => {
         reveals.forEach(el => {
             if (el.getBoundingClientRect().top < window.innerHeight - 100) {
