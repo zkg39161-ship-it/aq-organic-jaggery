@@ -3,60 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact AQ Fruit Farm for orders, queries, or product information. Reach us via WhatsApp or the contact form." />
-    <meta name="keywords" content="contact AQ Fruit Farm, WhatsApp, orders, queries, organic products" />
+    <meta name="description" content="Contact AQ Fruit Farm for orders, queries, or product information. Reach us via WhatsApp or contact form." />
+    <meta name="keywords" content="contact AQ Fruit Farm, WhatsApp orders, fruit farm contact, organic products" />
     <meta name="author" content="AQ Fruit Farm" />
     <title>AQ Fruit Farm | Contact</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Extra styles only for contact form -->
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #f6f3f8; color: #2b2b2b; }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg,#3a0f52,#6f2c8a);
-            padding: 60px 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 { font-size: 42px; letter-spacing: 2px; }
-        header p { font-size: 18px; margin-top: 10px; opacity: .95; }
-
-        /* Navigation */
-        nav {
-            background: rgba(45,15,58,0.95);
-            backdrop-filter: blur(10px);
-            padding: 14px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: 500;
-            font-size: 15px;
-            position: relative;
-        }
-        nav a::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #d9b3ff;
-            left: 0;
-            bottom: -4px;
-            transition: 0.3s;
-        }
-        nav a:hover::after { width: 100%; }
-
-        /* Sections */
-        section { padding: 70px 20px; text-align: center; }
-        section h2 { font-size: 36px; margin-bottom: 22px; color: #3a144b; }
-        section p { max-width: 850px; margin: auto; font-size: 18px; line-height: 1.7; }
-
-        /* Contact Form */
         form {
             max-width: 500px;
             margin: 40px auto 0;
@@ -69,61 +25,17 @@
             border: 1px solid #ccc;
             font-size: 16px;
         }
-        textarea { resize: none; }
-
-        .btn {
-            display: inline-block;
-            margin-top: 16px;
-            padding: 12px 28px;
-            background: linear-gradient(90deg,#4b1e63,#6f2c8a);
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            letter-spacing: .5px;
-            transition: transform .3s, box-shadow .3s;
-        }
-        .btn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(111,44,138,.4);
-        }
-
-        /* Footer */
-        footer {
-            background: linear-gradient(90deg,#2d0f3a,#4b1e63);
-            color: white;
-            padding: 35px 20px;
-            text-align: center;
-            margin-top: 60px;
-            font-size: 15px;
-            letter-spacing: .5px;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            z-index: 2000;
+        textarea {
+            resize: none;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>AQ FRUIT FARM</h1>
-    <p>Nature's Best • Pure Sweetness • Organic Wellness</p>
+    <p>Fresh Fruits • Natural Products • Direct From Farm</p>
 </header>
 
 <nav>
@@ -135,10 +47,21 @@
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Reach us directly via WhatsApp for orders or inquiries:</p>
-    <p><strong>03263086834</strong></p>
-    <a class="btn" href="https://wa.me/03263086834" target="_blank">Chat on WhatsApp</a>
 
+    <p>
+        For orders, pricing, or any questions, contact us directly on WhatsApp.
+        We respond quickly and personally.
+    </p>
+
+    <p style="margin-top:15px; font-size:20px;">
+        📞 <strong>0326-3086834</strong>
+    </p>
+
+    <a class="btn" href="https://wa.me/03263086834" target="_blank">
+        Chat on WhatsApp
+    </a>
+
+    <!-- Contact Form -->
     <form action="#" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -151,8 +74,9 @@
     <p>© 2025 AQ Fruit Farm. All Rights Reserved.</p>
 </footer>
 
+<!-- Floating WhatsApp -->
 <a href="https://wa.me/03263086834" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    &#x1F4AC;
+    💬
 </a>
 
 </body>
