@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AQ Fruit Farm offers pure, chemical-free organic products. Healthy, natural and full of goodness." />
-    <meta name="keywords" content="organic products, natural jaggery, healthy sweetener, AQ Fruit Farm" />
+    <meta name="description" content="AQ Fruit Farm offers fresh fruits and natural farm products directly from farmers. Healthy, organic and chemical-free." />
+    <meta name="keywords" content="fruit farm, mangoes, organic products, natural foods, AQ Fruit Farm" />
     <meta name="author" content="AQ Fruit Farm" />
-    <title>AQ Fruit Farm | Home</title>
+    <title>AQ Fruit Farm | Fresh From Farm</title>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #f6f3f8; color: #2b2b2b; }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            background: #FFFDE7;
+            color: #2E2E2E;
+        }
 
         /* Header */
         header {
-            background: linear-gradient(135deg,#3a0f52,#6f2c8a);
-            padding: 90px 20px;
+            background: linear-gradient(120deg, #2E7D32, #66BB6A);
+            padding: 80px 20px;
             text-align: center;
             color: white;
         }
-        header h1 { font-size: 52px; letter-spacing: 3px; }
-        header p { font-size: 20px; margin-top: 12px; opacity: .95; }
+        header h1 {
+            font-size: 46px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
 
         /* Navigation */
         nav {
-            background: rgba(45,15,58,0.95);
-            backdrop-filter: blur(10px);
-            padding: 16px;
+            background: #2E7D32;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -34,75 +45,95 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
-            font-weight: 500;
-            font-size: 16px;
-            position: relative;
+            margin: 0 18px;
+            font-weight: 600;
         }
-        nav a::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #d9b3ff;
-            left: 0;
-            bottom: -6px;
-            transition: 0.3s;
+        nav a:hover {
+            color: #F9A825;
         }
-        nav a:hover::after { width: 100%; }
 
         /* Hero */
         .hero {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
             align-items: center;
-            gap: 50px;
-            padding: 100px 20px;
+            gap: 40px;
+            padding: 90px 20px;
             max-width: 1200px;
             margin: auto;
         }
-        .hero-text h2 { font-size: 44px; margin-bottom: 18px; color: #3a144b; }
-        .hero-text p { font-size: 18px; max-width: 480px; line-height: 1.7; }
-        .hero img { width: 100%; max-width: 420px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+        .hero-text p {
+            font-size: 18px;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
 
+        /* Button */
         .btn {
             display: inline-block;
-            margin-top: 26px;
-            padding: 15px 34px;
-            background: linear-gradient(90deg,#4b1e63,#6f2c8a);
+            margin-top: 22px;
+            padding: 14px 32px;
+            background: linear-gradient(90deg, #F9A825, #EF6C00);
             color: white;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            letter-spacing: .5px;
             transition: transform .3s, box-shadow .3s;
         }
         .btn:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(111,44,138,.4);
+            box-shadow: 0 10px 25px rgba(239,108,0,.4);
         }
 
         /* Sections */
-        section { padding: 90px 20px; text-align: center; }
-        section h2 { font-size: 36px; margin-bottom: 22px; color: #3a144b; }
-        section p { max-width: 850px; margin: auto; font-size: 18px; line-height: 1.7; }
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #2E7D32;
+        }
+        section p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
 
         /* Footer */
         footer {
-            background: linear-gradient(90deg,#2d0f3a,#4b1e63);
+            background: #2E7D32;
             color: white;
             padding: 35px 20px;
             text-align: center;
             margin-top: 60px;
-            font-size: 15px;
-            letter-spacing: .5px;
         }
 
-        /* Scroll Animations */
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        /* Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-        /* Floating WhatsApp Button */
+        /* WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -122,11 +153,12 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>AQ FRUIT FARM</h1>
-    <p>Nature's Best • Pure Sweetness • Organic Wellness</p>
+    <p>Fresh Fruits • Natural Products • Direct From Farm</p>
 </header>
 
 <nav>
@@ -136,26 +168,28 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section id="home" class="hero reveal">
+<section class="hero reveal">
     <div class="hero-text">
-        <h2>Experience the Purest Sweetness</h2>
-        <p>Premium organic jaggery and natural products made from pure ingredients, free from chemicals and artificial processing.</p>
-        <a href="https://wa.me/03263086834" class="btn" target="_blank">Buy Now</a>
+        <h2>Fresh & Natural From Our Farms</h2>
+        <p>
+            AQ Fruit Farm brings you farm-fresh fruits and natural products,
+            grown with care and delivered with trust.
+        </p>
+        <a href="https://wa.me/03263086834" class="btn" target="_blank">
+            Order on WhatsApp
+        </a>
     </div>
-    <img src="https://github.com/zkg39161-ship-it/aq-organic-jaggery/blob/main/image%202.jpg?raw=true" alt="AQ Fruit Farm Hero">
+
+    <img src="https://github.com/zkg39161-ship-it/aq-organic-jaggery/blob/main/image%202.jpg?raw=true"
+         alt="Fresh Fruits from AQ Fruit Farm">
 </section>
 
-<section id="about" class="reveal">
+<section class="reveal">
     <h2>About AQ Fruit Farm</h2>
     <p>
-        AQ Fruit Farm is a premium natural food provider, offering organic jaggery and other natural products using traditional and clean methods.
-        Our products are completely free from chemicals, preservatives, and artificial colors, ensuring purity and health in every bite.
-    </p>
-    <br>
-    <p>
-        We work directly with farmers to maintain quality, sustainability, and authenticity. The production process preserves
-        essential nutrients, making AQ Fruit Farm products a healthier alternative to processed foods.
-        Our mission is to promote a natural lifestyle through clean, organic, and trustworthy food products.
+        AQ Fruit Farm works directly with farmers to provide fresh fruits and
+        natural farm products. We focus on quality, honesty, and sustainability,
+        ensuring healthy food reaches your home.
     </p>
 </section>
 
@@ -163,18 +197,15 @@
     <p>© 2025 AQ Fruit Farm. All Rights Reserved.</p>
 </footer>
 
-<a href="https://wa.me/03263086834" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    &#x1F4AC;
+<a href="https://wa.me/03263086834" target="_blank" class="whatsapp-float">
+    💬
 </a>
 
 <script>
-    // Scroll animation
     const reveals = document.querySelectorAll('.reveal');
     window.addEventListener('scroll', () => {
         reveals.forEach(el => {
-            const windowHeight = window.innerHeight;
-            const revealTop = el.getBoundingClientRect().top;
-            if (revealTop < windowHeight - 100) {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
                 el.classList.add('active');
             }
         });
